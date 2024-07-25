@@ -162,14 +162,11 @@ ul {
     .content{
         flex-direction: column;
     }
-    body{
-        /* overflow: visible; */
-    }
     .left-side {  
         /* position: relative;   */
         /* width: 60%; */
         margin-left: 0;
-        padding: 20px 40px 20px 5px;
+        padding: 20px 40px 20px 20px;
     }
     .left-side h5 {
         font-size: 12px;
@@ -179,6 +176,51 @@ ul {
     
     .left-side h3 {
         font-size: 25px;
+        font-weight: 300;
+    }
+
+    .left-side p {
+        margin-top: -5px;
+        font-size: 14px;
+    }
+
+    ul{
+        font-size: 13px;
+    }
+
+    .right-side img{
+        width: 200px;
+        /* opacity: ; */
+        /* position: absolute; */
+        /* top: 10px; */
+        /* right: 10px; */
+        /* margin-top: 100px; */
+    }
+    body::before {
+        width: 90%;
+    }
+    
+    body::after {
+        /* left: calc(90% + 100px);
+        width: calc(50% - 100px); */
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .left-side {  
+        width: auto;
+        margin-left: 0;
+        padding: 20px 40px 20px 20px;
+    }
+    .left-side h5 {
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: -10px;
+    }
+    
+    .left-side h3 {
+        font-size: 20px;
         font-weight: 300;
     }
 
