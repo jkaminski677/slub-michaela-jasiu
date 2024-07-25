@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    background-color: #ffeeea;
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.main{
+    /* border: 2px solid peru; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-size: 30px;
+}
+
+.main p {
+    color: white; /* Kolor tekstu */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.main img {
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: -250px;
+    width: 100%;
+    height: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+     .main{
+        font-size: 15px;
+     }
+     .main img {
+        opacity: 0.1;
+        position: absolute;
+        left: -10%;
+        top: 25%;
+        width: 120%;
+        height: 100%;
+        height: auto;
+    }
+}
