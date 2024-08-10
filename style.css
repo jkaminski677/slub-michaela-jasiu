@@ -89,13 +89,25 @@ p, a {
     letter-spacing: 3px;
 }
 
-a {
-    text-decoration: none;
+.button-a{
     background-color: #d4aa89;
     color: #e8e6e1;
     padding: 5px 20px;
     border-radius: 4px;
     transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-a{
+    color: black;
+    transition: all 0.1s ease;
+}
+
+.text-a:hover{
+    color: rgb(134, 134, 134);
 }
 
 .left-side ul {
@@ -177,7 +189,6 @@ li{
     background: -o-linear-gradient(top, rgba(212, 169, 137, 0.69) 0%, rgba(180, 141, 106, 0.61) 100%); /* Opera 11.1+ */
     background: -ms-linear-gradient(top, rgba(212, 169, 137, 0.69) 0%, rgba(180, 141, 106, 0.61) 100%); /* IE10+ */
     background: linear-gradient(to bottom, rgba(212, 169, 137, 0.69) 0%, rgba(180, 141, 106, 0.61) 100%); /* Standard syntax */
-
     border: none;
     border-radius: 3px;
     font-family: 'Montserrat', sans-serif;
@@ -193,7 +204,7 @@ li{
 }
 
 .buttons:hover {
-    background: linear-gradient(to bottom, #cc8d56 0%, #b5763b 100%);
+    background: linear-gradient(to bottom, #c0936ba9 0%, #ebab6f8e 100%);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-3px);
 }
