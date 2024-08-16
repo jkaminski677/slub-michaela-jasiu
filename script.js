@@ -140,3 +140,27 @@ document.getElementById('scrollButton').addEventListener('click', function() {
 // // Wywołanie funkcji na początku i przy każdym zmianie rozmiaru okna
 // window.addEventListener('resize', checkScreenHeight);
 // checkScreenHeight();  // Wywołanie na początku, aby ustawić odpowiedni stan
+
+
+/* -------------------------------------------------------------- */
+// FAQ
+/* -------------------------------------------------------------- */
+
+document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', () => {
+        const answer = item.nextElementSibling;
+        const icon = item.querySelector('.toggle-icon');
+
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+            icon.textContent = '+';
+        } else {
+            document.querySelectorAll('.faq-answer').forEach(ans => ans.style.maxHeight = null);
+            document.querySelectorAll('.toggle-icon').forEach(ic => ic.textContent = '+');
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            icon.textContent = '-';
+        }
+    });
+});
+
+/* -------------------------------------------------------------- */
