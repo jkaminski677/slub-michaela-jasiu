@@ -170,9 +170,14 @@ li{
     margin-bottom: -10px;
 }
 
+.inVisibleButtons{
+    /* margin-bottom: 20px; */
+    margin-top: -10px;
+}
 
 .inVisibleButton {
-    color: #e8e6e1;
+    color: #e2e2e2;
+    opacity: 0.6;
 }
 
 
@@ -301,6 +306,7 @@ li{
     .faq-answer {
         font-size: 14px;
     }
+    
 }
 
 /* -------------------------------------------------------------- */
@@ -366,6 +372,9 @@ li{
 }
 
 @media screen and (max-width: 780px) {
+    .footer-img{
+        display: none;
+    }
     .content{
         justify-content: flex-start;
         margin-top: 30px;
