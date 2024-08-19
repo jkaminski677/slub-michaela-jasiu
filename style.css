@@ -177,7 +177,26 @@ li{
 
 .inVisibleButton {
     color: #e2e2e2;
-    opacity: 0.2;
+    opacity: 0.02;
+}
+
+.img-in-faq{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.faq-answer .thing-faq {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.faq-answer .arrow {
+    width: 20px;
+    margin: 0 25px 0 10px;
 }
 
 
