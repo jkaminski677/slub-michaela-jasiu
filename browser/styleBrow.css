@@ -119,12 +119,14 @@ p {
     text-align: center;
     transition: background-color 0.3s ease;
     font-size: 15px;
-    font-weight: bold;
+    color: white;
 }
 
 .highlight {
     display: block;
     /* background-color: #ffeb3b; */
+    background-color: #000000;
+
 }
 
 .table.inactive {
@@ -196,6 +198,7 @@ p {
 #bride-table .guest {
     writing-mode: horizontal-tb;
     width: 40px;
+    background-color: #000000;
 }
 
 #exit {
