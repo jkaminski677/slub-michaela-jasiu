@@ -119,11 +119,12 @@ p {
     text-align: center;
     transition: background-color 0.3s ease;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .highlight {
     display: block;
-    background-color: #ffeb3b;
+    /* background-color: #ffeb3b; */
 }
 
 .table.inactive {
@@ -271,7 +272,7 @@ p {
         bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
-        width: 60px;
+        width: 120px;
     }
     
     #cold-plate {
