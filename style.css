@@ -6,6 +6,7 @@
     font-weight: 100;
     font-style: normal;
 } */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -191,14 +192,18 @@ li{
 
 .faq-answer .thing-faq {
     width: 40px;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .faq-answer .arrow {
-    width: 20px;
-    margin: 0 25px 0 10px;
+    width: 40px;
+    margin: 0 5px 0 5px;
 }
 
+.koperta {
+    width: 40px;
+    margin-left: 10px;
+}
 
 
 /* BUTTON  */
