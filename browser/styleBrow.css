@@ -7,12 +7,19 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 h1 {
     font-size: 2em;
-    margin: 20px;
+    margin: 10px;
     color: #333;
+}
+
+p {
+    padding: 0 0 10px 0;
+    margin: -10px 0 0 0;
+    font-size: 12px;
 }
 
 #search-input {
@@ -22,7 +29,7 @@ h1 {
     max-width: 400px;
     border: 2px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: border 0.3s ease;
 }
@@ -44,12 +51,13 @@ h1 {
     box-sizing: border-box;
     background-color: #ffffff;
     border-radius: 10px;
+    width: 99%;
 }
 
 #dance-floor {
     width: 90%;
     height: 40%;
-    border: 2px dashed #007bff;
+    border: 2px dashed #d1d1d1;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -59,11 +67,16 @@ h1 {
     color: #333;
 }
 
-.column {
+.column,
+.column2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+}
+
+.column2 {
+    margin-bottom: 60px;
 }
 
 .center-column {
@@ -72,7 +85,7 @@ h1 {
 
 .table {
     background-color: #f8f8f8;
-    border: 2px solid #007bff;
+    border: 2px solid #000000;
     padding: 20px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -114,6 +127,7 @@ h1 {
 }
 
 .table.inactive {
+    border: 2px solid #007bff;
     opacity: 0.2;
     transform: scale(0.5);
 }
@@ -129,7 +143,7 @@ h1 {
 
 .decoration {
     position: absolute;
-    background-color: #007bff;
+    background-color: #3d3d3d;
     color: white;
     padding: 5px;
     border-radius: 5px;
@@ -170,6 +184,17 @@ h1 {
     height: 150px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#bride-table .seats {
+    margin-left: 5px;
+}
+
+#bride-table .guest {
+    writing-mode: horizontal-tb;
+    width: 40px;
 }
 
 #exit {
@@ -182,6 +207,9 @@ h1 {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    h1{
+        font-size: 20px;
+    }
     #dance-floor {
         width: 80%;
         height: 25%;
@@ -228,37 +256,37 @@ h1 {
     }
 
     #dj {
-        top: 20px;
+        top: 35px;
         right: 20px;
-        width: 80px;
+        width: 40px;
     }
     
     #drinks {
         bottom: 50px;
         left: 20px;
-        width: 100px;
+        width: 60px;
     }
     
     #stairs {
         bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
-        width: 80px;
+        width: 60px;
     }
     
     #cold-plate {
         bottom: 50px;
         right: 20px;
-        width: 100px;
+        width: 60px;
     }
     
     #bride-table {
-        width: 20px;
+        width: 15px;
         height: 120px;
     }
     
     #exit {
         width: 120px;
-        height: 20px;
+        height: 15px;
     }
 }
