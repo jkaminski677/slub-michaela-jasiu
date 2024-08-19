@@ -126,7 +126,7 @@ p {
     display: block;
     /* background-color: #ffeb3b; */
     background-color: #000000;
-
+    transform: scale(1.5);
 }
 
 .table.inactive {
