@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprawdź swój pokój</title>
+    <title>Sprawdź pokój</title>
     <link rel="stylesheet" href="styleRoom.css">
 </head>
 <body>
     <div class="container">
-        <h1>Sprawdź swój pokój</h1>
-        <p>Wpisz: Jan, Anna, Paweł, Ola</p>
-        <input type="text" id="nameInput" placeholder="Wpisz swoje imię">
-        <button onclick="checkRoom()">Sprawdź</button>
-        <div id="result"></div>
-        <div id="roomLayout"></div>
+        <h1>Sprawdź w jakim pokoju śpisz</h1>
+        <div class="search-container">
+            <input type="text" id="nameInput" placeholder="Wpisz swoje imię...">
+            <button onclick="checkRoom()">Sprawdź pokój</button>
+        </div>
+        <div id="result">
+            <!-- Wynik wyszukiwania -->
+        </div>
+        <div id="roomLayout">
+            <!-- Szablon pokoju -->
+        </div>
     </div>
     <script src="scriptRoom.js"></script>
 </body>

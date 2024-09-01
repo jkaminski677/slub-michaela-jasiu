@@ -1,37 +1,42 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .container {
     text-align: center;
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    margin-bottom: 20px;
 }
 
 input[type="text"] {
     padding: 10px;
-    margin-top: 10px;
-    width: 80%;
     font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
 }
 
 button {
     padding: 10px 20px;
-    margin-top: 10px;
     font-size: 16px;
-    cursor: pointer;
+    border: none;
     background-color: #007bff;
     color: white;
-    border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 button:hover {
@@ -48,22 +53,75 @@ button:hover {
 }
 
 .room {
-    border: 2px solid #007bff;
-    padding: 10px;
-    margin-top: 20px;
-    display: inline-block;
+    margin: 20px auto;
+    min-width: 200px;
+    min-height: 300px;
+    border: 2px solid #000;
+    position: relative;
 }
 
-.bed {
-    background-color: #ffcc00;
-    padding: 10px;
-    margin: 5px;
-    display: inline-block;
+.room .bed {
+    width: 45px;
+    height: 80px;
+    background-color: #ffeb3b;
+    position: absolute;
+    border: 1px solid #000;
 }
 
-.bathroom {
-    background-color: #00cc99;
-    padding: 10px;
-    margin: 5px;
-    display: inline-block;
+.room .bathroom {
+    width: 70px;
+    height: 50px;
+    background-color: #90caf9;
+    position: absolute;
+    border: 1px solid #000;
+}
+
+.room.two-person .bed:nth-child(1) {
+    top: 30px;
+    left: 20px;
+}
+
+.room.two-person .bed:nth-child(2) {
+    top: 30px;
+    right: 20px;
+}
+
+.room.three-person .bed:nth-child(1) {
+    top: 30px;
+    left: 20px;
+}
+
+.room.three-person .bed:nth-child(2) {
+    top: 30px;
+    left: 120px;
+}
+
+.room.three-person .bed:nth-child(3) {
+    top: 30px;
+    right: 20px;
+}
+
+.room.four-person .bed:nth-child(1) {
+    top: 20px;
+    left: 20px;
+}
+
+.room.four-person .bed:nth-child(2) {
+    top: 20px;
+    right: 20px;
+}
+
+.room.four-person .bed:nth-child(3) {
+    bottom: 20px;
+    left: 20px;
+}
+
+.room.four-person .bed:nth-child(4) {
+    bottom: 20px;
+    right: 20px;
+}
+
+.room .bathroom {
+    bottom: 10px;
+    right: 40%;
 }
