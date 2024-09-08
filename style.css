@@ -171,13 +171,21 @@ li{
     margin-bottom: -10px;
 }
 
+#hidden-element {
+    opacity: 0.02; /* Domyślna przezroczystość */
+    transition: opacity 1s ease-in-out; /* Płynne przejście przy zmianie */
+}
+
 .inVisibleButtons{
     /* margin-bottom: 20px; */
     margin-top: -10px;
 }
 
 .inVisibleButton {
-    color: #e2e2e2;
+    color: #616161;
+}
+
+.invs {
     opacity: 0.02;
 }
 

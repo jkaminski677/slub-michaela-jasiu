@@ -81,6 +81,7 @@ p {
 
 .center-column {
     justify-content: center;
+    justify-content: space-between;
 }
 
 .table {
@@ -242,6 +243,10 @@ p {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .center-column {
+        justify-content: space-between;
     }
 
     .table {

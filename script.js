@@ -165,3 +165,22 @@ document.querySelectorAll('.faq-question').forEach(item => {
 
 /* -------------------------------------------------------------- */
 
+
+/* -------------------------------------------------------------- */
+// Włączenie przycisku w dniu slubu
+/* -------------------------------------------------------------- */
+
+// Funkcja, która sprawdzi aktualną datę i porówna ją z docelową
+function checkDateAndTime() {
+    let currentTime = new Date();
+    let targetTime = new Date('2024-09-11T13:00:00');  // Ustawienie docelowego czasu
+
+    // Jeśli obecny czas przekracza docelowy, ustaw opacity na 1
+    if (currentTime >= targetTime) {
+        document.getElementById('hidden-element').style.opacity = '1';
+    }
+}
+
+// Sprawdzanie co sekundę
+setInterval(checkDateAndTime, 1000);
+/* -------------------------------------------------------------- */
