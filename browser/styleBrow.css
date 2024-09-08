@@ -112,13 +112,14 @@ p {
 
 .guest {
     display: none;
-    width: 100%;
-    margin: 0 2px 10px 2px;
+    width: auto;
+    margin: 5px 2px 10px 2px;
     padding: 6px;
     border-radius: 4px;
     text-align: center;
     transition: background-color 0.3s ease;
     font-size: 15px;
+    letter-spacing: 1px;
     color: white;
 }
 
@@ -179,12 +180,15 @@ p {
     width: 100px;
 }
 
+
+
 #bride-table {
-    left: 10px;
-    bottom: 20%;
-    transform: translateY(-50%);
+    /* right: 10px; */
+    /* bottom: 20%; */
+    /* transform: translateY(-50%); */
+    position: unset;
     width: 20px;
-    height: 150px;
+    height: 130px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     display: flex;
@@ -192,18 +196,32 @@ p {
 }
 
 #bride-table .seats {
-    margin-left: 5px;
+    margin-left: -125px;
 }
 
 #bride-table .guest {
     writing-mode: horizontal-tb;
-    width: 40px;
+    width: 60px;
     background-color: #000000;
+}
+
+#bride-table .guest::after {
+    content: "";
+    position: absolute;
+    top: 50%; /* Ustawienie w połowie wysokości */
+    transform: translateY(-50%);
+    right: -5px; /* Przesunięcie na prawo od chmurki */
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left-color: #000000; /* Kolor lewej krawędzi trójkąta */
+    border-right: 0;
+    /* margin-top: -10px; */
 }
 
 #exit {
     top: 10px;
-    left: 50%;
+    left: 80px;
     transform: translateX(-50%);
     width: 120px;
     height: 20px;
@@ -260,8 +278,9 @@ p {
     }
 
     #dj {
-        top: 35px;
-        right: 20px;
+        top: 10px;
+        left: 50%;
+    	transform: translateX(-50%);
         width: 40px;
     }
     
@@ -286,11 +305,13 @@ p {
     
     #bride-table {
         width: 15px;
-        height: 120px;
+        height: 100px;
+        margin: 0;
     }
     
     #exit {
-        width: 120px;
-        height: 15px;
+        left: 45px;
+        width: 60px;
+        height: 30px;
     }
 }
