@@ -172,8 +172,11 @@ li{
 }
 
 #hidden-element {
-    opacity: 0.02; /* Domyślna przezroczystość */
-    transition: opacity 1s ease-in-out; /* Płynne przejście przy zmianie */
+    /* opacity: 0.02; */
+    background-color: #d4aa89;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
 }
 
 .inVisibleButtons{
@@ -183,6 +186,14 @@ li{
 
 .inVisibleButton {
     color: #616161;
+    
+}
+
+#hidden-element:hover {
+    color: #000000;
+    background-color: #d6996b;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
 
 .invs {
