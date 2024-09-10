@@ -441,6 +441,10 @@ li{
         font-size: 13px;
     }
 
+    .right-side{
+        margin-top: 20px;
+    }
+
     .right-side img{
         width: 200px;
     }
